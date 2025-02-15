@@ -25,7 +25,6 @@ export default {
     // Submit handler
     const submitForm = handleSubmit((values) => {
       console.log("Form submitted!", values);
-      // Add your registration logic here
     });
 
     return {

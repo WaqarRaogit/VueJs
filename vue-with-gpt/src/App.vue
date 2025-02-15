@@ -3,21 +3,16 @@
 import {ref, reactive, computed, watch, onMounted, onBeforeMount, onBeforeUnmount, onUnmounted} from "vue";
 
 import RegisterForm from "./RegisterForm.vue";
-/*  const git = ref("")
-
-  const isVisibleIf = ref(true);  
-const isVisibleShow = ref(true); 
-
-
-const toggleVisibilityIf = () => {
-  isVisibleIf.value = !isVisibleIf.value;
-};
-
-
-const toggleVisibilityShow = () => {
-  isVisibleShow.value = !isVisibleShow.value;
-}; */
-
+import binding from "./components/binding.vue";
+import loop from "./components/loop.vue";
+import events from "./components/events.vue";
+import computedPractice from "./components/computedPractice.vue";
+import child from "./components/child.vue";
+import parent from "./components/parent.vue";
+import Cart from "./components/Cart.vue";
+import ProductList from "./components/ProductList.vue";
+import teleportPractice from "./components/teleportPractice.vue";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
@@ -39,9 +34,21 @@ const toggleVisibilityShow = () => {
     </div>
   </div> -->
 
-  <h1>User Register Form</h1>
+  <!-- <h1>User Register Form</h1> -->
 
-  <RegisterForm />
+  <!-- <RegisterForm /> -->
+
+  <!-- <h3>Binding</h3> -->
+  <!-- <binding /> -->
+   <!-- <loop /> -->
+  <!-- <events /> -->
+   <!-- <computedPractice education="BSIT" cgpa=3.81 /> -->
+    <!-- <parent /> -->
+     <!-- <Cart /> -->
+      <!-- <teleportPractice /> -->
+
+    <Navbar />
+    <router-view></router-view>
 
 </template>
 
